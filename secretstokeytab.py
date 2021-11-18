@@ -64,7 +64,7 @@ def write_entry(user, enctype, key, realm, wfile):
     try:
         etype = etypes[enctype]
     except KeyError:
-        print('etype not supported')
+        print('etype not found')
         return
 
     key = bytes.fromhex(key)
