@@ -102,6 +102,7 @@ def main():
 
     infile = args.infile
     outfile = args.outfile
+    realm = args.realm
 
     if not args.append:
         initfile(outfile)
