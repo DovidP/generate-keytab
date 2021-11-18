@@ -92,7 +92,7 @@ def main():
     parser.add_argument("-outfile", help="The outfile if append is specified, this is the file to append to", required=True)
     parser.add_argument("-realm", help= "The realm for the keytab entries "
                                         "(if the user string in the infile contains the realm this will be ignored)", required=True)
-    parser.add_argument("-append", action='store_true', default=False, help="Append to an existing keytab instead of overwriting it", required=True)
+    parser.add_argument("-append", action='store_true', default=False, help="Append to an existing keytab instead of overwriting it")
     
     if len(sys.argv) == 1:
         parser.print_help()
